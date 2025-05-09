@@ -1,3 +1,109 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    display: flex;
+    place-items: center;
+    min-width: 320px;
+    min-height: 100vh;
+    font-family: "Young Serif", serif;
+    background-color: white;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    color: hsl(332, 51%, 32%);
+  }
+   
+  p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: hsl(30, 10%, 34%);
+    font-family: "Outfit", sans-serif;
+    line-height: 1.5;
+    margin-bottom: 30px;
+  }
+  
+  li p, li h4 {
+    display: inline;
+    font-weight: 400;
+    font-family: "Outfit", sans-serif;
+  }
+  li h4 {
+    font-weight: 600;
+  }
+  li {
+    margin-bottom: 15px;
+  }
+  
+  img {
+    width: 100%;
+  }
+  
+  main {
+    width: 85%;
+    margin: 10px auto 0;
+  }
+  section:not(:first-child) {
+    padding: 40px 0;
+  }
+  section h2 {
+    margin: 0;
+    padding: 0;
+  }
+  section:not(:last-child) {
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+  }
+  /* Footer */
+  footer {
+    width: 100%;
+    text-align: center;
+    background-color: hsl(332, 51%, 32%);
+    margin: 0;
+    margin-top: 30px;
+    padding: 10px 0 30px;
+  }
+  
+  footer p {
+    margin-bottom: 0;
+    color: hsl(330, 100%, 98%);
+  }
+  
+  footer a {
+    color: hsl(330, 100%, 80%);;
+  }
+  
+  /* Table */
+  table{
+    width: 100%;
+    margin-top: 50px;
+    border-collapse: collapse;
+    border-spacing: 10px;
+  }
+  tr:not(:last-child) {
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+  }
+  td {
+    padding:10px
+  }
+  tr, td {
+    text-align: center;
+  }
+  td:first-child {
+    font-size: 1rem;
+    font-weight: 400;
+    color: hsl(30, 10%, 34%);
+    font-family: "Outfit", sans-serif;
+    line-height: 1.5;
+    margin-bottom: 30px;
+  }
+  td:last-child {
+    font-size: 1rem;
+    font-weight: 600;
+    color: hsl(332, 51%, 32%);
+  }
+  
 .app {
     width: 100vw;
     display: flex;
@@ -21,14 +127,26 @@ section.preparation h2 {
 
 @media (min-width: 1000px) {
     body {
-        background-color: hsl(340, 33%, 98%);    
+        background-color: rgb(244,228,216	);    
+    }
+    .app {
+        margin: 50px 0;
     }
     .app-container {
+        padding: 25px;
+        border-radius: 15px;
         max-width: 800px;
         background-color: white;
     }
+    img, footer {
+        border-radius: 15px;
+    }
+    main {
+        width: 100%;
+        margin: 0 ;
+    }
     section.preparation {
         width: 100%;
-        padding: 10px;
+        padding: 20px;
     }
 }
